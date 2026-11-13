@@ -1,0 +1,333 @@
+{
+ "meta": {
+  "date": "2026-10-23",
+  "synthetic": true,
+  "train_elders": 300,
+  "val_elders": 100,
+  "test_elders": 150,
+  "train_days": 31792,
+  "days_per_elder": 120,
+  "seed": 42
+ },
+ "thresholds": {
+  "alert_path": 9.202330065502963,
+  "watch_path": 10.041535733308319,
+  "alert_score": 0.5365384458955372,
+  "watch_score": 0.5069227945674863,
+  "alert_quantile": 0.999,
+  "watch_quantile": 0.995
+ },
+ "results": {
+  "combined": {
+   "elders": 150,
+   "scored_days": 15894,
+   "elder_weeks": 2270.5714285714284,
+   "per_type": {
+    "hr_rise": {
+     "events": 41,
+     "recall_watch": 1.0,
+     "recall_alert": 0.926829268292683,
+     "median_days_watch": 4.0,
+     "median_days_alert": 5.0,
+     "precision_alert": 0.8314606741573034
+    },
+    "spo2_night": {
+     "events": 33,
+     "recall_watch": 0.8484848484848485,
+     "recall_alert": 0.8484848484848485,
+     "median_days_watch": 2.0,
+     "median_days_alert": 2.0,
+     "precision_alert": 0.9642857142857143
+    },
+    "fever": {
+     "events": 42,
+     "recall_watch": 1.0,
+     "recall_alert": 0.9523809523809523,
+     "median_days_watch": 1.0,
+     "median_days_alert": 1.0,
+     "precision_alert": 1.0
+    },
+    "inactivity": {
+     "events": 44,
+     "recall_watch": 1.0,
+     "recall_alert": 0.8636363636363636,
+     "median_days_watch": 2.0,
+     "median_days_alert": 2.0,
+     "precision_alert": 0.9807692307692307
+    },
+    "fall": {
+     "events": 48,
+     "recall_watch": 1.0,
+     "recall_alert": 1.0,
+     "median_days_watch": 1.0,
+     "median_days_alert": 1.0,
+     "precision_alert": 1.0
+    }
+   },
+   "decoys": {
+    "hot_spell": {
+     "n": 19,
+     "watch": 6,
+     "alert": 0
+    },
+    "holiday": {
+     "n": 33,
+     "watch": 20,
+     "alert": 2
+    },
+    "exercise": {
+     "n": 40,
+     "watch": 4,
+     "alert": 0
+    },
+    "bad_night": {
+     "n": 22,
+     "watch": 0,
+     "alert": 0
+    },
+    "false_fall": {
+     "n": 23,
+     "watch": 1,
+     "alert": 0
+    }
+   },
+   "precision_alert": 0.935361216730038,
+   "precision_watch": 0.5813008130081301,
+   "false_alerts_per_elder_week": 0.007487102051088461,
+   "false_watch_per_elder_week": 0.09072606014848371,
+   "false_alert_day_rate": 0.0015127552774530702,
+   "false_by_reason": {
+    "inactivity": {
+     "watch": 63,
+     "alert": 1
+    },
+    "fever": {
+     "watch": 76,
+     "alert": 0
+    },
+    "pattern": {
+     "watch": 17,
+     "alert": 0
+    },
+    "hr_rise": {
+     "watch": 44,
+     "alert": 15
+    },
+    "spo2_night": {
+     "watch": 6,
+     "alert": 1
+    },
+    "fall": {
+     "watch": 0,
+     "alert": 0
+    }
+   }
+  },
+  "rules_only": {
+   "elders": 150,
+   "scored_days": 15894,
+   "elder_weeks": 2270.5714285714284,
+   "per_type": {
+    "hr_rise": {
+     "events": 41,
+     "recall_watch": 1.0,
+     "recall_alert": 0.926829268292683,
+     "median_days_watch": 4.0,
+     "median_days_alert": 5.0,
+     "precision_alert": 0.8470588235294118
+    },
+    "spo2_night": {
+     "events": 33,
+     "recall_watch": 0.8181818181818182,
+     "recall_alert": 0.8181818181818182,
+     "median_days_watch": 2.0,
+     "median_days_alert": 2.0,
+     "precision_alert": 0.9642857142857143
+    },
+    "fever": {
+     "events": 42,
+     "recall_watch": 1.0,
+     "recall_alert": 0.9523809523809523,
+     "median_days_watch": 1.0,
+     "median_days_alert": 1.0,
+     "precision_alert": 1.0
+    },
+    "inactivity": {
+     "events": 44,
+     "recall_watch": 1.0,
+     "recall_alert": 0.8636363636363636,
+     "median_days_watch": 2.0,
+     "median_days_alert": 2.0,
+     "precision_alert": 0.975
+    },
+    "fall": {
+     "events": 48,
+     "recall_watch": 1.0,
+     "recall_alert": 1.0,
+     "median_days_watch": 1.0,
+     "median_days_alert": 1.0,
+     "precision_alert": 1.0
+    }
+   },
+   "decoys": {
+    "hot_spell": {
+     "n": 19,
+     "watch": 6,
+     "alert": 0
+    },
+    "holiday": {
+     "n": 33,
+     "watch": 20,
+     "alert": 2
+    },
+    "exercise": {
+     "n": 40,
+     "watch": 3,
+     "alert": 0
+    },
+    "bad_night": {
+     "n": 22,
+     "watch": 0,
+     "alert": 0
+    },
+    "false_fall": {
+     "n": 23,
+     "watch": 1,
+     "alert": 0
+    }
+   },
+   "precision_alert": 0.9387755102040817,
+   "precision_watch": 0.5926724137931034,
+   "false_alerts_per_elder_week": 0.00660626651566629,
+   "false_watch_per_elder_week": 0.08323895809739525,
+   "false_alert_day_rate": 0.001375232070411882,
+   "false_by_reason": {
+    "inactivity": {
+     "watch": 63,
+     "alert": 1
+    },
+    "fever": {
+     "watch": 76,
+     "alert": 0
+    },
+    "hr_rise": {
+     "watch": 44,
+     "alert": 13
+    },
+    "spo2_night": {
+     "watch": 6,
+     "alert": 1
+    },
+    "fall": {
+     "watch": 0,
+     "alert": 0
+    }
+   }
+  },
+  "model_only": {
+   "elders": 150,
+   "scored_days": 15894,
+   "elder_weeks": 2270.5714285714284,
+   "per_type": {
+    "hr_rise": {
+     "events": 41,
+     "recall_watch": 0.7560975609756098,
+     "recall_alert": 0.36585365853658536,
+     "median_days_watch": 8.0,
+     "median_days_alert": 8.0,
+     "precision_alert": null
+    },
+    "spo2_night": {
+     "events": 33,
+     "recall_watch": 0.30303030303030304,
+     "recall_alert": 0.09090909090909091,
+     "median_days_watch": 2.0,
+     "median_days_alert": 2.0,
+     "precision_alert": null
+    },
+    "fever": {
+     "events": 42,
+     "recall_watch": 0.8333333333333334,
+     "recall_alert": 0.7142857142857143,
+     "median_days_watch": 1.0,
+     "median_days_alert": 2.0,
+     "precision_alert": null
+    },
+    "inactivity": {
+     "events": 44,
+     "recall_watch": 0.0,
+     "recall_alert": 0.0,
+     "median_days_watch": null,
+     "median_days_alert": null,
+     "precision_alert": null
+    },
+    "fall": {
+     "events": 48,
+     "recall_watch": 0.020833333333333332,
+     "recall_alert": 0.0,
+     "median_days_watch": 1.0,
+     "median_days_alert": null,
+     "precision_alert": null
+    }
+   },
+   "decoys": {
+    "hot_spell": {
+     "n": 19,
+     "watch": 0,
+     "alert": 0
+    },
+    "holiday": {
+     "n": 33,
+     "watch": 0,
+     "alert": 0
+    },
+    "exercise": {
+     "n": 40,
+     "watch": 2,
+     "alert": 0
+    },
+    "bad_night": {
+     "n": 22,
+     "watch": 0,
+     "alert": 0
+    },
+    "false_fall": {
+     "n": 23,
+     "watch": 0,
+     "alert": 0
+    }
+   },
+   "precision_alert": 0.9411764705882353,
+   "precision_watch": 0.7297297297297297,
+   "false_alerts_per_elder_week": 0.001321253303133258,
+   "false_watch_per_elder_week": 0.01321253303133258,
+   "false_alert_day_rate": 0.0002062848105617823,
+   "false_by_reason": {
+    "pattern": {
+     "watch": 30,
+     "alert": 3
+    },
+    "hr_rise": {
+     "watch": 0,
+     "alert": 0
+    },
+    "spo2_night": {
+     "watch": 0,
+     "alert": 0
+    },
+    "fever": {
+     "watch": 0,
+     "alert": 0
+    },
+    "inactivity": {
+     "watch": 0,
+     "alert": 0
+    },
+    "fall": {
+     "watch": 0,
+     "alert": 0
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,20 @@
+{
+  "Simulator Target Bundle": "com.salem.app",
+  "aps": {
+    "alert": {
+      "title": "SOS from Mama",
+      "body": "Mama pressed SOS. Open Salem to see the alert."
+    },
+    "sound": "default",
+    "mutable-content": 1
+  },
+  "custom": {
+    "i": "00000000-0000-4000-8000-000000000001",
+    "a": {
+      "elder_id": "00000000-0000-4000-8000-0000000000e1",
+      "severity": "critical",
+      "source_kind": "sos",
+      "source_id": "00000000-0000-4000-8000-0000000000a1"
+    }
+  }
+}

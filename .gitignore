@@ -1,0 +1,58 @@
+# ── Secrets: never in this repo ──────────────────────────────────────────────
+.env
+.env.*
+**/.env
+**/.env.*
+*.keystore
+*.jks
+*.p8
+*.p12
+*.pem
+*.key
+*.mobileprovision
+google-services.json
+GoogleService-Info.plist
+*service-account*.json
+*firebase-adminsdk*.json
+# Gradle files that may hold signing passwords (SALEM_RELEASE_*)
+**/gradle.properties.local
+local.properties
+.gradle/
+
+# ── Dependencies and build outputs ───────────────────────────────────────────
+node_modules/
+**/node_modules/
+native/android/app/build/
+native/android/build/
+native/android/.kotlin/
+native/ios/build/
+native/ios/Pods/
+*.apk
+*.aab
+*.ipa
+dist/
+coverage/
+*.tsbuildinfo
+.metro-health-check*
+
+# ── Seed / test-account scripts (kept private) ───────────────────────────────
+scripts/*/run.mjs
+scripts/*/*seed*.sql
+scripts/*/*cleanup*.sql
+
+# ── Python (ml/) ─────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+ml/.cache/
+.venv/
+
+# ── Tools and OS ─────────────────────────────────────────────────────────────
+.DS_Store
+.claude/
+.expo/
+.idea/
+.vscode/
+supabase/.temp/
+npm-debug.*
+yarn-debug.*
+yarn-error.*
